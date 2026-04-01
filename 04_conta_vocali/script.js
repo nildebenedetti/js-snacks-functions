@@ -17,9 +17,10 @@ function vowelCounter (myString) {
         const currentLetter = myString[i];
         // SE currentValore === a || e || i || o || u || y
         if (currentLetter === 'a' || currentLetter === 'e' || currentLetter === 'i' || currentLetter === 'u' || currentLetter === 'o' || currentLetter === 'y' ) {
-
+            // allora push 1 al myCounter
+            vowelCountStorage.push(1);
         }
-        //allora push 1 al myCounter
+   
 
     }
         // creo somma di numeri in array Counter
