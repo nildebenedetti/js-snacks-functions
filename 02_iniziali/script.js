@@ -7,6 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // devo creare un ciclo for per scorrere i nomi
 // per ogni nome, deve pescare la lettera con index 0
+// poi interrompo
 
 function pescaIniziali (arrayNomi) {
     const arrayLettere = [];
@@ -27,3 +28,22 @@ const firtstLetters = pescaIniziali(names);
 console.log(firtstLetters);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// Riscrivo la funzione as arrow function
+
+const pescaInizialiArrow = arrayNomi => {
+      const arrayLettere = [];
+    for (let i = 0; i < arrayNomi.length; i++) {
+        const currentNome = arrayNomi[i];
+       for ( let j = 0; j < currentNome.length; j++) {
+            arrayLettere.push(currentNome[j]);
+            break;
+        }
+    } 
+    return arrayLettere;
+};
+
+// Invocazione
+
+const alwaysFirstLetters = pescaInizialiArrow(names);
+console.log(alwaysFirstLetters);
