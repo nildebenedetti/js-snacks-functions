@@ -9,13 +9,15 @@ const word = 'javascript';
 // Invoca la funzione qui e stampa il risultato in console
 
 function vowelCounter (myString) {
+    // dichiaro array per conteggio vocale
+    const vowelCountStorage = [];
     // con un ciclo for, faccio il giro della stringa
     for ( let i = 0; i < myString.length; i++) {
         // init variabile di appoggio
         const currentLetter = myString[i];
         // SE currentValore === a || e || i || o || u || y
         if (currentLetter === 'a' || currentLetter === 'e' || currentLetter === 'i' || currentLetter === 'u' || currentLetter === 'o' || currentLetter === 'y' ) {
-            
+
         }
         //allora push 1 al myCounter
 
