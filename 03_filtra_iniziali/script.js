@@ -7,7 +7,6 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-/*
 function arrayFilterByLetter(myArray, myLetter) {
     // dichiaro array vuoto da riempire con nomi che hanno líniziale corretta
     const filteredArray = [];
@@ -32,12 +31,11 @@ function arrayFilterByLetter(myArray, myLetter) {
 
 const myNewArray = arrayFilterByLetter(names, 'A');
 console.log(myNewArray);
-*/
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
 
-// provo ora a riscriverlo ma arrow function
+/*provo ora a riscriverlo ma arrow function
 
 const arrayFilterByLetterArrow = (myArray, myLetter) => {
     // dichiaro array vuoto da riempire con nomi che hanno líniziale corretta
@@ -55,8 +53,5 @@ const arrayFilterByLetterArrow = (myArray, myLetter) => {
         }
     }
     return filteredArray;
-}
+} */
 
-// test
-const myNewArray = arrayFilterByLetterArrow(names, 'A');
-console.log(myNewArray);
