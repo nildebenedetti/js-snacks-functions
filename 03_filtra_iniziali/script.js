@@ -22,11 +22,9 @@ function arrayFilterByLetter (myArray, myLetter) {
             let currentFirstLetter = currentName[j];
             // condizione if per verificare match con myLetter
             if (currentFirstLetter === sortingLetter) {
-
-
+                filteredArray.push(currentName); // se la prima lettera matcha, allora push nome in array
             }
         }
-        
     } 
     
     
