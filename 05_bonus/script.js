@@ -19,7 +19,11 @@ if (currentTime > 00 && currentTime <=  07) {
     saluto = `Buongiorno ${name}!`
 } else if (currentTime > 13 && currentTime <= 17) {
     saluto = `Buon pomeriggio ${name}!`
+} else if (currentTime > 17 && currentTime <= 00) {
+    saluto = `Buonasera ${name}!`
 }
+
+console.log(saluto);
 
 // Dichiara la funzione qui.
 
