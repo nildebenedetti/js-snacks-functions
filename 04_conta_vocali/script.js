@@ -12,7 +12,7 @@ function vowelCounter (myString) {
     // dichiaro array per conteggio vocale
     const vowelCountStorage = [];
     // dichiaro array delle vocale per creare match
-    const arrayVocali = ['a', 'e', 'i', 'o', 'u', 'y']; 
+    const arrayVowels = ['a', 'e', 'i', 'o', 'u', 'y']; 
     // con un ciclo for, faccio il giro della stringa
     // creo somma di numeri in array Counter 
     let sumVowelCount = 0;
@@ -20,7 +20,7 @@ function vowelCounter (myString) {
         // init variabile di appoggio
         const currentLetter = myString[i];
         // SE currentValore === a || e || i || o || u || y
-        if (currentLetter === 'a' || currentLetter === 'e' || currentLetter === 'i' || currentLetter === 'u' || currentLetter === 'o' || currentLetter === 'y' ) {
+        if (arrayVowels.includes(currentLetter) === true ) {
             // allora push 1 al myCounter
             vowelCountStorage.push(1);
         }
@@ -30,7 +30,7 @@ function vowelCounter (myString) {
     }
        // return sumCounter
        return sumVowelCount;
-} */
+} 
 
 
 
