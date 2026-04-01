@@ -38,3 +38,4 @@ console.log(quanteVocali);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
+// scrivo ora la sintassi in 

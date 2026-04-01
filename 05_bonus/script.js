@@ -7,6 +7,15 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
+// evoco un nuovo oggetto Date con metodo getHours
+// per beccare l'ora esatta del log
+const currentTime = new Date().getHours()
+//dichiaro variabile del saluto per inserirlo nel return
+let saluto = 0;
+
+if (currentTime > 00:00 && currentTime <  07:00) {
+
+}
 
 // Dichiara la funzione qui.
 
