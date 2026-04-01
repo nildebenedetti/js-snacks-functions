@@ -12,6 +12,8 @@ function vowelCounter (myString) {
     // dichiaro array per conteggio vocale
     const vowelCountStorage = [];
     // con un ciclo for, faccio il giro della stringa
+    // creo somma di numeri in array Counter 
+    const sumVowelCount = 0;
     for ( let i = 0; i < myString.length; i++) {
         // init variabile di appoggio
         const currentLetter = myString[i];
@@ -20,11 +22,12 @@ function vowelCounter (myString) {
             // allora push 1 al myCounter
             vowelCountStorage.push(1);
         }
-   
-
     }
-        // creo somma di numeri in array Counter
+    for (let i = 0; i < vowelCountStorage.length; i++) {
+        sumVowelCount += vowelCountStorage[i];
+    }
        // return sumCounter
+       return sumVowelCount;
 }
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
