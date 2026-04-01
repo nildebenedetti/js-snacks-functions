@@ -7,26 +7,28 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-// evoco un nuovo oggetto Date con metodo getHours
-// per beccare l'ora esatta del log
-const currentTime = new Date().getHours()
-//dichiaro variabile del saluto per inserirlo nel return
-let saluto = 0;
-// aggiungo if chain per possibili casistiche di saluto
-if (currentTime > 00 && currentTime <=  07) {
-    saluto = `Carissimo ${name}, cosa ci fai al pc? Fatti una camomilla.`
-} else if (currentTime > 07 && currentTime <= 13) {
-    saluto = `Buongiorno ${name}!`
-} else if (currentTime > 13 && currentTime <= 17) {
-    saluto = `Buon pomeriggio ${name}!`
-} else if (currentTime > 17 && currentTime <= 00) {
-    saluto = `Buonasera ${name}!`
-}
 
-console.log(saluto);
 
 // Dichiara la funzione qui.
 
+function greatGreater(userName) {
+    // evoco un nuovo oggetto Date con metodo getHours
+    // per beccare l'ora esatta del log
+    const currentTime = new Date().getHours()
+    //dichiaro variabile del saluto per inserirlo nel return
+    let saluto = 0;
+    // aggiungo if chain per possibili casistiche di saluto
+    if (currentTime > 00 && currentTime <=  07) {
+        saluto = `Carissimo ${userName}, cosa ci fai al pc? Fatti una camomilla.`
+    } else if (currentTime > 07 && currentTime <= 13) {
+        saluto = `Buongiorno ${userName}!`
+    } else if (currentTime > 13 && currentTime <= 17) {
+        saluto = `Buon pomeriggio ${userName}!`
+    } else if (currentTime > 17 && currentTime <= 00) {
+        saluto = `Buonasera ${userName}!`
+    }
+return saluto;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
