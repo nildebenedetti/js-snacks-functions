@@ -5,7 +5,10 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-
+// dichiaro un array con le vocali, quindi voglio che 
+    // innesco un ciclo fo a livello interno cosi
+        // SE current letter facendo il giro e'uguale al currentvowel
+            // allora posso scrivere 1 nel vowel count storage
 
 function vowelCounter (myString) {
     // dichiaro array per conteggio vocale
