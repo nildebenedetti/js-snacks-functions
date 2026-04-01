@@ -7,8 +7,39 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-
+/*
 function arrayFilterByLetter(myArray, myLetter) {
+    // dichiaro array vuoto da riempire con nomi che hanno líniziale corretta
+    const filteredArray = [];
+
+    // uso ciclo for per scorrere l'array con i nomi
+    for (let i = 0; i < myArray.length; i++) {
+        // variabile di supporto per identificare nome del giro in array
+        const currentName = myArray[i];
+        // rimuovo ciclo for e inidico la posizione con index 0 nel current name
+        let currentFirstLetter = currentName[0];
+        // condizione if per verificare match con myLetter
+        if (currentFirstLetter === myLetter) {
+            filteredArray.push(currentName); // se la prima lettera matcha, allora push nome in array
+        }
+    }
+    return filteredArray;
+} 
+
+
+
+// Invoca la funzione qui e stampa il risultato in console
+
+const myNewArray = arrayFilterByLetter(names, 'A');
+console.log(myNewArray);
+*/
+
+//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+
+// provo ora a riscriverlo ma arrow function
+
+const arrayFilterByLetterArrow = (myArray, myLetter) => {
     // dichiaro array vuoto da riempire con nomi che hanno líniziale corretta
     const filteredArray = [];
 
@@ -26,12 +57,6 @@ function arrayFilterByLetter(myArray, myLetter) {
     return filteredArray;
 }
 
-
-
-// Invoca la funzione qui e stampa il risultato in console
-
-const myNewArray = arrayFilterByLetter(names, 'A');
+// test
+const myNewArray = arrayFilterByLetterArrow(names, 'A');
 console.log(myNewArray);
-
-
-//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
