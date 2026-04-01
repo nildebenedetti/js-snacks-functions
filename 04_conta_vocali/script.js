@@ -10,10 +10,13 @@ const word = 'javascript';
 
 function vowelCounter (myString) {
     // con un ciclo for, faccio il giro della stringa
-    // SE currentValore === a || e || i || o || u || y
+    for ( let i = 0; i < myString.length; i++) {
+        // SE currentValore === a || e || i || o || u || y
         //allora push 1 al myCounter
     // creo somma di numeri in array Counter
     // return sumCounter
+    }
+    
 }
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
