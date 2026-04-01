@@ -15,3 +15,12 @@ function salutaFratm (fratmName) {
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+// riscrivo la function as arrow function
+
+const salutaGigi = nomeGigi => console.log(`Ciaonissimo ${nomeGigi}!`);
+
+// Invoco arrow function
+
+salutaGigi(userName);
