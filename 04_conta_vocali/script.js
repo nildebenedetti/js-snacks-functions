@@ -10,6 +10,8 @@ const word = 'javascript';
 function vowelCounter (myString) {
     // dichiaro array per conteggio vocale
     const vowelCountStorage = [];
+    // dichiaro array delle vocale per creare match
+    const arrayVocali = ['a', 'e', 'i', 'o', 'u', 'y']; 
     // con un ciclo for, faccio il giro della stringa
     // creo somma di numeri in array Counter 
     let sumVowelCount = 0;
