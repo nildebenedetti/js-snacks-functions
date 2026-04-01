@@ -26,7 +26,7 @@ function arrayFilterByLetter (myArray, myLetter) {
             }
         }
     } 
-    
+    return filteredArray;
     
 }
 
