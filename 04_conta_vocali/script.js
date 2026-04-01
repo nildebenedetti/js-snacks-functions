@@ -12,7 +12,7 @@ function vowelCounter (myString) {
     // con un ciclo for, faccio il giro della stringa
     for ( let i = 0; i < myString.length; i++) {
         // init variabile di appoggio
-        const currentLetter = mystring[i];
+        const currentLetter = myString[i];
         // SE currentValore === a || e || i || o || u || y
 
         //allora push 1 al myCounter
