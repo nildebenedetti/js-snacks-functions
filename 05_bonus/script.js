@@ -12,9 +12,11 @@ const name = 'Mario';
 const currentTime = new Date().getHours()
 //dichiaro variabile del saluto per inserirlo nel return
 let saluto = 0;
-
-if (currentTime > 00:00 && currentTime <  07:00) {
-
+// aggiungo if chain per possibili casistiche di saluto
+if (currentTime > 00 && currentTime <  07) {
+    saluto = `Carissimo ${name}, cosa ci fai al pc? Fatti una camomilla.`
+} else if (currentTime > 07 && currentTime < 13) {
+    saluto = `Buongiorno ${name}!`
 }
 
 // Dichiara la funzione qui.
