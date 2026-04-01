@@ -7,8 +7,6 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-
-
 // Dichiara la funzione qui.
 
 function greatGreater(userName) {
@@ -32,6 +30,7 @@ return saluto;
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+const salutaFratm = greatGreater(name);
+console.log(salutaFratm);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
