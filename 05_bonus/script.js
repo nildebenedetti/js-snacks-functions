@@ -9,7 +9,7 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
-function greatGreater(userName) {
+function greatGreeter(userName) {
     // evoco un nuovo oggetto Date con metodo getHours
     // per beccare l'ora esatta del log
     const currentTime = new Date().getHours()
@@ -30,7 +30,7 @@ return saluto;
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const salutaFratm = greatGreater(name);
+const salutaFratm = greetGreater(name);
 console.log(salutaFratm);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
